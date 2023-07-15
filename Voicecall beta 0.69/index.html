@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Mann-Hummel</title>
+  <link rel="stylesheet" type="text/css" href="Style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com%22%3E/">
+  <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="titulo">
+  <h1>Mann-Hummel VideoCall</h1>
+  <img src="MANNHUMMEL_Logo.svg" width="140" height="60" class="logo">
+</header>
+
+
+  <section class="Pantalla"> 
+      <video id="screenDisplay" autoplay muted></video>
+      <canvas id="drawing"></canvas>
+      <br>
+    </section>
+    
+    
+    <br>
+    
+
+
+    <footer class="foot">
+<button id="camaraON" onclick="startCam()"><img id="camaraImg" src="Icons/camara.png"></button> <!---  Iniciar camara -->
+
+<button id="canvButt" onclick="drawOn()"><img id="displayImg" src="Icons/DrawOn.png"></button> <!---  Iniciar transmision de pantalla -->
+
+<button id="micMute" onclick="micMute()"><img id="micImg" src="Icons/Micro.png"></button>  <!---  Iniciar microfono -->
+  
+  <br>
+
+</footer>
+
+
+
+<script src="./app.js"></script>
+<script src="canvas.js"></script>
+
+</body>
+</html>

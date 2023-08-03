@@ -14,6 +14,8 @@ function getUserMedia() {
     
     micStream = stream;
 
+    document.querySelector("audio").srcObject = stream;
+
     window.stream = stream;
     camStat = stream;
 
